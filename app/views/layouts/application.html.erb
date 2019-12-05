@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CollaborateV3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'hello_vue' %>
+  </head>
+
+  <body>
+    <div class="container" data-behavior="vue">
+      <div id='hello'>
+         <app></app>
+       </div>
+      <%= yield %>
+
+      
+    </div>
+  </body>
+
+   
+</html>
