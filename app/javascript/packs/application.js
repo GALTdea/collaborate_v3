@@ -7,7 +7,10 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import Vue from 'vue/dist/vue.esm'
+import App from '../app.vue'
 
+Vue.config.devtools = true
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
@@ -17,12 +20,12 @@ require("channels")
 
 
 
-import Vue from 'vue/dist/vue.esm'
+
 
 import TurbolinksAdapter from 'vue-turbolinks';
 Vue.use(TurbolinksAdapter)
 
-import App from '../app.vue'
+
 Vue.component('app', App)
 
 document.addEventListener('turbolinks:load', () => {
