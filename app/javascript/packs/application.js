@@ -6,6 +6,7 @@
 require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
+require("bootstrap/dist/js/bootstrap")
 
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'

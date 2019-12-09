@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :challenges
+  resources :users
   root to: "pages#Welcome"
   get 'pages/Welcome'
   get 'pages/Home'
